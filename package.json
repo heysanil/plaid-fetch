@@ -1,0 +1,26 @@
+{
+  "name": "plaid-fetch",
+  "version": "0.0.0",
+  "description": "Fetch-based client for the Plaid API",
+  "author": "Sanil Chawla <hi@sanil.co>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heysanil/plaid-fetch.git"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc && tsc -p tsconfig.esm.json",
+    "generate": "pnpx @openapitools/openapi-generator-cli generate -g typescript-fetch -i 2020-09-14.yml -o . -p npmName=plaid-fetch,supportsES6=true,modelPropertyNaming=original && ./simplify-interfaces.sh",
+    "prepare": "pnpm build",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0"
+  }
+}

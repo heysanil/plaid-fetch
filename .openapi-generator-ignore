@@ -1,0 +1,8 @@
+# OpenAPI Generator Ignore
+
+README.md
+package.json
+.npmignore
+
+# Errors in generated code; should be manually reviewed
+src/models/PaymentInitiationConsentPaymentExecuteRequest.ts
