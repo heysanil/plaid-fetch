@@ -1,6 +1,6 @@
 {
   "name": "plaid-fetch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fetch-based client for the Plaid API",
   "author": "Sanil Chawla <hi@sanil.co>",
   "repository": {
